@@ -1,0 +1,35 @@
+.searchbox{
+    display: flex;
+    flex-direction: column;
+    background: #eece6a;
+    padding: 1.25rem 1rem;
+    margin: 0 1rem;
+    &__title, &__label{
+        margin-bottom: 1rem;
+    }
+    &__title{
+        font-size: 1.5rem;
+    }
+    &__label{
+        font-weight: 300;
+        font-size: .9rem;
+    }
+    &__input{
+        padding: .75rem 1rem;
+        border: 1px solid #d9d9d9;
+    }
+    &__button{
+        background: #00874d;
+        color: #fff;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        border: none;
+    }
+    &__results{
+        background: #fff;
+        border: 1px solid black;
+    }
+    &__result{
+        border-bottom: 1px solid #d9d9d9;
+    }
+}
