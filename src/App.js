@@ -1,15 +1,18 @@
 import React from 'react'
 
-import NavBar from './components/NavBar'
+import "./App.scss"
+import Header from './components/Header'
+import Title from './components/Title'
 import SearchBox from './components/SearchBox'
 
 
 const App = () => {
   return (
-    <>
-    <NavBar/>
+    <div className="app">
+    <Header/>
+    <Title/>
     <SearchBox/>
-    </>
+    </div>
   )
 }
 
