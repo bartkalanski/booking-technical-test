@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow } from "enzyme";
 
-import App from '../App';
+import Title from '../../components/Title';
 
-describe("App", () => {
+describe("Title", () => {
   let wrapper;
   it('should render without throwing an error', () => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<Title />);
     expect(wrapper).not.toBeNull();
   })
 })

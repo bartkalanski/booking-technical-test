@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow } from "enzyme";
 
-import App from '../App';
+import SearchBox from '../../components/SearchBox';
 
-describe("App", () => {
+describe("SearchBox", () => {
   let wrapper;
   it('should render without throwing an error', () => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<SearchBox />);
     expect(wrapper).not.toBeNull();
   })
 })
