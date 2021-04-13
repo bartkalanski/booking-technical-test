@@ -1,11 +1,8 @@
-import React from 'react'
+import axios from "axios";
 
-const Rentalcars = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const Rentalcars = axios.create({
+  baseURL:
+    "https://www.rentalcars.com/",
+});
 
-export default Rentalcars
+export default Rentalcars;
