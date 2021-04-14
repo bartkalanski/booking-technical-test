@@ -17,22 +17,27 @@ const SearchBox = () => {
             );
             setResults(data.results.docs)
         }
-        if(value) wrapper()
-        console.log(results)
+        if (value.length > 1) wrapper()
     }, [value])
-
+    console.log('results', results)
     return (
         <div className="searchbox">
             <h3 className="searchbox__title">Where are you going?</h3>
             <label htmlFor="input" className="searchbox__label">Pick-up Location</label>
             <input value={value} onChange={handleChange} name="input" type="text" placeholder="city, airport, station, region and district..." className="searchbox__input" />
-            <div className="searchbox__results">{results.map(result => (
-                <div className="searchbox__result">
-                    <div className="searchbox__id">{result.bookingId}</div>
-                    <div className="searchbox__name">{result.name}</div>
-                    <div className="searchbox__location">{result.city}, {result.region}, {result.country}</div>
-                </div>
-            ))}</div>
+            {results.map(result => value.length < 2 ? null : (
+                <div className="searchbox__results">
+                    <div className="searchbox__result">
+                        {results[0].name === 'No results found' ? <div>{results[0].name}</div> : (
+                            <>
+                                <div className="searchbox__id">{result.bookingId}</div>
+                                <div className="searchbox__name">{result.name}</div>
+                                <div className="searchbox__location">{result.city}, {result.region}, {result.country}</div>
+                            </>
+                        )
+                        }
+                    </div>
+                </div>))}
             <button className="searchbox__button">Search</button>
         </div>
     )

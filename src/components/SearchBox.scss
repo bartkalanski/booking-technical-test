@@ -26,10 +26,18 @@
         border: none;
     }
     &__results{
+        position: absolute;
+        cursor: pointer;
+        width: 32.9rem;
+        top: 15.5rem;
         background: #fff;
         border: 1px solid black;
     }
     &__result{
+        padding: .25rem;
         border-bottom: 1px solid #d9d9d9;
+        &:hover{
+            background: #d7e6f7;
+        }
     }
 }
