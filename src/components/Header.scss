@@ -1,4 +1,8 @@
-.header{
-    padding: 1rem .5rem;
-    color: #fff;
+.header {
+  padding: 1rem 0.5rem;
+  color: #fff;
+
+  @media screen and (min-width: 1024px) {
+    padding: 1.15rem 1.15rem;
+  }
 }

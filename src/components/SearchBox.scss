@@ -4,6 +4,13 @@
     background: #eece6a;
     padding: 1.25rem 1rem;
     margin: 0 1rem;
+
+    @media screen and (min-width: 1024px) {
+        width: 85vw;
+        max-width: 1150px;
+        margin: 0 auto;
+      }
+
     &__title, &__label{
         margin-bottom: 1rem;
     }
@@ -13,10 +20,25 @@
     &__label{
         font-weight: 300;
         font-size: .9rem;
+        @media screen and (min-width: 1024px) {
+        }
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            align-items: center;
+        }
     }
     &__input{
         padding: .75rem 1rem;
         border: 1px solid #d9d9d9;
+        @media screen and (min-width: 1024px) {
+            width: 40rem;
+            padding: 1rem 1rem;
+            margin-right: 1rem;
+        }
     }
     &__button{
         background: #00874d;
@@ -24,18 +46,34 @@
         padding: 1rem 0;
         margin-top: 1rem;
         border: none;
+        @media screen and (min-width: 1024px) {
+            width: 10rem;
+            margin-top: 0;
+            font-size: 1rem;
+        }
     }
     &__results{
         position: absolute;
         cursor: pointer;
-        width: 32.9rem;
+        width: 80.7vw;
         top: 15.5rem;
         background: #fff;
-        border: 1px solid black;
+        @media screen and (min-width: 1024px) {
+            width: 40rem;
+            top: 16.5rem;
+        }
     }
     &__result{
         padding: .25rem;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
         border-bottom: 1px solid #d9d9d9;
+        &:first-child{
+            border-top: 1px solid black;
+        }
+        &:last-child{
+            border-bottom: 1px solid black;
+        }
         &:hover{
             background: #d7e6f7;
         }
