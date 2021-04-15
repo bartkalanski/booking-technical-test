@@ -1,0 +1,26 @@
+.results {
+  position: absolute;
+  cursor: pointer;
+  width: 80.7vw;
+  top: 15.5rem;
+  background: #fff;
+  @media screen and (min-width: 1024px) {
+    width: 40rem;
+    top: 16.5rem;
+  }
+  &__result {
+    padding: 0.25rem;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid #d9d9d9;
+    &:first-child {
+      border-top: 1px solid black;
+    }
+    &:last-child {
+      border-bottom: 1px solid black;
+    }
+    &:hover {
+      background: #d7e6f7;
+    }
+  }
+}
