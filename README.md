@@ -4,7 +4,7 @@
   <h3 align="center">Booking.com tech test</h3>
 
   <p align="center">
-    [Hosted site](https://bart4booking.netlify.app/)
+    Project Link: [https://bart4booking.netlify.app/](https://bart4booking.netlify.app/)
   </p>
 </p>
 
