@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">Booking.com tech test</h3>
+  <h1 align="center">Booking.com tech test</h3>
 
-  <h6 align="center">
+  <h3 align="center">
     Project Link: https://bart4booking.netlify.app/
   </h6>
 </p>
