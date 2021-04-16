@@ -20,7 +20,6 @@ const SearchBox = () => {
         }
         if (value.length > 1) wrapper()
     }, [value])
-    console.log('results', results)
 
     return (
         <div className="searchbox">
