@@ -1,12 +1,12 @@
 .results {
   position: absolute;
   cursor: pointer;
-  width: 80.7vw;
-  top: 15.5rem;
+  width: 80vw;
+  top: 39%;
   background: #fff;
   @media screen and (min-width: 1024px) {
     width: 40rem;
-    top: 16.5rem;
+    top: 100%;
   }
   &__result {
     padding: 0.25rem;

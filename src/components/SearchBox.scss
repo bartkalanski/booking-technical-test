@@ -25,6 +25,7 @@
     }
   }
   &__container {
+    position: relative;
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 1024px) {
