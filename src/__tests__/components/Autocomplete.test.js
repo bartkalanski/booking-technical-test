@@ -10,8 +10,8 @@ describe("Autocomplete", () => {
     expect(wrapper).not.toBeNull();
   })
   it('should not display any results if input value length is less than two', () => {
-    wrapper = shallow(<Autocomplete value="a" results={[]}/>);
-    const results = wrapper.find(".results__results");
+    wrapper = shallow(<Autocomplete value="" results={[]}/>);
+    const results = wrapper.find(".results");
     expect(results.children()).toHaveLength(0);
   })
   it('should display no results found message', () => {
