@@ -2,7 +2,8 @@ import React from 'react'
 
 import "./Autocomplete.scss"
 
-const Autocomplete = ({ value, results = null }) => {
+const Autocomplete = ({ value, results }) => {
+    if (!results) return null
     return (
         <div className="results">{results.map(result => value.length < 2 ? null : (
             <div className="results__result" key={results.indexOf(result)}>
