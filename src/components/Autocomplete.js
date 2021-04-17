@@ -2,10 +2,10 @@ import React from 'react'
 
 import "./Autocomplete.scss"
 
-const Autocomplete = ({ value, results = [] }) => {
+const Autocomplete = ({ value, results = null }) => {
     return (
         <div className="results">{results.map(result => value.length < 2 ? null : (
-            <div className="results__result" key={result.locationId}>
+            <div className="results__result" key={results.indexOf(result)}>
                 {results[0].name === 'No results found' ? <div className="results__error">{results[0].name}</div> : (
                     <>
                         <div>{result.bookingId}</div>

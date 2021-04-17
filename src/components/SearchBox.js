@@ -16,6 +16,7 @@ const SearchBox = () => {
             const { data } = await Rentalcars.get(
                 `FTSAutocomplete.do?solrIndex=fts_en&solrRows=6&solrTerm=${value}`
             );
+            console.log('data', data)
             setResults(data.results.docs)
         }
         if (value.length > 1) wrapper()
