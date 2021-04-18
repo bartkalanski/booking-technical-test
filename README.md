@@ -42,11 +42,15 @@ To install follow these steps:
    npm install
    ```
 3. Run the app in development mode
-     ```sh
+   ```sh
    npm start
    ```
-4. Run the tests
-     ```sh
+4.View the app in browser
+   ```sh
+   Open http://localhost:3000
+   ```
+5. Run the tests
+   ```sh
    npm test
    ```
 
