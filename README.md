@@ -37,18 +37,22 @@ To install follow these steps:
    ```sh
    git clone https://github.com/bartkalanski/booking-technical-test
    ```
+   
 2. Install NPM packages
    ```sh
    npm install
    ```
+   
 3. Run the app in development mode
    ```sh
    npm start
    ```
-4.View the app in browser
+   
+4. View the app in browser
    ```sh
    Open http://localhost:3000
    ```
+   
 5. Run the tests
    ```sh
    npm test
